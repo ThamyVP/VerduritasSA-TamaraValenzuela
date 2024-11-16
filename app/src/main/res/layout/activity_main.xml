@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgraund_gradient">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Logo de hojas -->
+
+        <!-- Campo de texto para Usuario -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="133dp"
+            android:layout_height="137dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint=""
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:textColor="#4A6A3B"
+            android:textColorHint="#4A6A3B" />
+
+        <!-- Campo de texto para Contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPassword"
+            android:hint=""
+            android:padding="12dp"
+            android:textColor="#4A6A3B"
+            android:textColorHint="#4A6A3B" />
+
+        <!-- Botón Ingresar -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEditText"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#78C850"
+            android:padding="12dp"
+            android:text="Ingresar"
+            android:textColor="#4A6A3B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Botón Continuar con Google -->
+
+        <!-- Texto para registrarse -->
+        <Button
+            android:id="@+id/googleLoginButton"
+            android:layout_width="379dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/loginButton"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/logo_google"
+            android:padding="12dp"
+            android:text="Continuar con Google"
+            android:textColor="#4A6A3B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="No tienes una cuenta? Regístrate"
+            android:textColor="#4A6A3B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

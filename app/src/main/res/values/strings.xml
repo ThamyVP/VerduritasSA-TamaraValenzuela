@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Verduritas SA-TamaraValenzuela</string>
+    <string-array name="Verduras">
+        <item>Verduras</item>
+        <item>Tomate</item>
+        <item>Cebolla</item>
+        <item>Lechuga</item>
+        <item>Apio</item>
+        <item>Choclo</item>
+    </string-array>
+</resources>
